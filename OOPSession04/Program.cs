@@ -1,4 +1,9 @@
-﻿namespace OOPSession04
+﻿using OOPSession04.IAuthenticationServiceQ;
+using OOPSession04.IShape;
+using OOPSession04.NotificationService;
+
+
+namespace OOPSession04
 {
     internal class Program
     {
@@ -27,7 +32,7 @@
             // Answer : b) , c)
 
             #endregion
-      
+
 
             #region Question 3:
             //Can an interface contain fields in C#?
@@ -123,6 +128,45 @@
             #endregion
 
             #region Part03
+
+            #region Question 1 
+            //ICircle circle = new Circle(5);
+            //IRectangle rectangle = new Rectangle(4, 6);
+
+            //// Display shape information
+            //circle.DisplayShapeInfo();
+            //rectangle.DisplayShapeInfo();
+            #endregion
+
+            #region Question 2 
+            //IAuthenticationService authService = new BasicAuthenticationService();
+
+            //string username = "user1";
+            //string password = "password1";
+            //string role = "admin";
+
+            //// Authenticate the user
+            //bool isAuthenticated = authService.AuthenticateUser(username, password);
+            //Console.WriteLine($"Is {username} authenticated? {isAuthenticated}");
+
+            //// Authorize the user
+            //bool isAuthorized = authService.AuthorizeUser(username, role);
+            //Console.WriteLine($"Is {username} authorized as {role}? {isAuthorized}");
+            #endregion
+
+            #region Question 3 
+            //INotificationService emailService = new EmailNotificationService();
+            //INotificationService smsService = new SmsNotificationService();
+            //INotificationService pushService = new PushNotificationService();
+
+
+            //string recipient = "example@domain.com";
+            //string message = "Hello, this is a test notification.";
+
+            //emailService.SendNotification(recipient, message);
+            //smsService.SendNotification(recipient, message);
+            //pushService.SendNotification(recipient, message);
+            #endregion
 
 
             #endregion
